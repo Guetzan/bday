@@ -1,119 +1,119 @@
 let audios = {
 	iwitw: {
 		title: 'Backstreet Boys - I Want It That Way',
-		music: new Audio('./media/iwantitthatway.mp3'),
+		music: new Audio('./media/audios/iwantitthatway.mp3'),
 		isInteractive: false,
 		cover: {
 			isVideo   : true,
-			source    : './media/bday_video_1-1.mp4'
+			source    : './media/covers/bday_video_1-1.mp4'
 		}
 	},
 	UA: {
 		title: 'Ще не вмерла України',
-		music: new Audio('./media/ua.mp3'),
+		music: new Audio('./media/audios/ua.mp3'),
 		isInteractive: false,
 		cover: {
 			isVideo   : false,
-			source    : './media/coat_ua.jpg'
+			source    : './media/covers/coat_ua.jpg'
 		}
 	},
 	hello_darling: {
 		title: 'Hello, Darling. Don\'t be shy',
-		music: new Audio('./media/hello_darling.mp3'),
+		music: new Audio('./media/audios/hello_darling.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : false,
-			source    : './media/astarion.jpg'
+			source    : './media/covers/astarion.jpg'
 		}
 	},
 	brazil: {
 		title: 'BRAZIL MENTIONED!!!',
-		music: new Audio('./media/mentioned.mp3'),
+		music: new Audio('./media/audios/mentioned.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : false,
-			source    : './media/mentioned.jpg'
+			source    : './media/covers/mentioned.jpg'
 		}
 	},
 	wakeup: {
 		title: 'IT\'S TIME',
-		music: new Audio('./media/itstime.mp3'),
+		music: new Audio('./media/audios/itstime.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : false,
-			source    : './media/itstime.jpg'
+			source    : './media/covers/itstime.jpg'
 		}
 	},
 	zaza: {
 		title: 'ZAAZAAAAAAAAAAA',
-		music: new Audio('./media/zaza.mp3'),
+		music: new Audio('./media/audios/zaza.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/zaza.mp4'
+			source    : './media/covers/zaza.mp4'
 		}
 	},
 	solong: {
 		title: 'It\'s been 84 years',
-		music: new Audio('./media/solong.mp3'),
+		music: new Audio('./media/audios/solong.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/solong.mp4'
+			source    : './media/covers/solong.mp4'
 		}
 	},
 	wine: {
 		title: '🍷',
-		music: new Audio('./media/wine.mp3'),
+		music: new Audio('./media/audios/wine.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/wine.mp4'
+			source    : './media/covers/wine.mp4'
 		}
 	},
 	happy: {
 		title: 'HAAAAAAAAAAAAAPPY DAY',
-		music: new Audio('./media/happy.mp3'),
+		music: new Audio('./media/audios/happy.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/happy.mp4'
+			source    : './media/covers/happy.mp4'
 		}
 	},
 	fish: {
 		title: 'OMG TERRARIA FISH',
-		music: new Audio('./media/fish.mp3'),
+		music: new Audio('./media/audios/fish.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/fish.mp4'
+			source    : './media/covers/fish.mp4'
 		}
 	},
 	finesse: {
 		title: 'Very fancy, sweet friend',
-		music: new Audio('./media/finesse.mp3'),
+		music: new Audio('./media/audios/finesse.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/finesse.mp4'
+			source    : './media/covers/finesse.mp4'
 		}
 	},
 	drip: {
 		title: 'But also very cool 😎',
-		music: new Audio('./media/drip.mp3'),
+		music: new Audio('./media/audios/drip.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/drip.mp4'
+			source    : './media/covers/drip.mp4'
 		}
 	},
 	karlach: {
 		title: 'Your favorite demon lady',
-		music: new Audio('./media/Karlach.mp3'),
+		music: new Audio('./media/audios/Karlach.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/Karlach.mp4'
+			source    : './media/covers/Karlach.mp4'
 		}
 	},
 };
