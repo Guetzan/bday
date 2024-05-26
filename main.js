@@ -109,11 +109,11 @@ let audios = {
 	},
 	karlach: {
 		title: 'Your favorite demon lady',
-		music: new Audio('./media/audios/Karlach.mp3'),
+		music: new Audio('./media/audios/karlach.mp3'),
 		isInteractive: true,
 		cover: {
 			isVideo   : true,
-			source    : './media/covers/Karlach.mp4'
+			source    : './media/covers/karlach.mp4'
 		}
 	},
 };
