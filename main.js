@@ -143,7 +143,9 @@ function play(audio, pausedSong) {
 			pause();
 			audio.music.play();
 
-			previouslyPlaying = currentlyPlaying;
+			if(!currentlyPlaying.isInteractive)  {
+				previouslyPlaying = currentlyPlaying;
+			}
 			currentlyPlaying = audio;
 		}
 	}
