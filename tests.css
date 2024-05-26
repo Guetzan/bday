@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100vh; /* Ajuste a altura do body */
+  background: #e8e8e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Use 100vh em vez de 100svh */
+  padding: 20px 0;
+  overflow: hidden; /* Ocultar overflow para evitar que o conteúdo ultrapasse */
+}

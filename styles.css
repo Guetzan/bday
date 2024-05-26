@@ -1,0 +1,314 @@
+/*GENERAL STUFF*/
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+.w-100 {width: 100%;}
+.h-100 {height: 100%;}
+
+body {
+  margin: 0;
+  background: #e8e8e8;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+  color: rgba(0,0,0,0.85);
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 3.5em 0;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter h1 {
+  font-size: 2.8rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  /* font-weight:400; */
+  margin-bottom: 1rem;
+}
+
+.container-child {
+  width: 60%;
+  max-height: 100%;
+}
+
+/*LETTER*/
+.letter {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  overflow-y:auto;
+  margin-top: 1.5rem;
+}
+
+/*LETTER UKRAINE FLAG*/
+.ua-flag {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ua-flag::before {
+  display: block;
+  content: '';
+  height: 50%;
+  background-color: #0057B7;
+}
+
+.ua-flag::after {
+  display: block;
+  content: '';
+  height: 50%;
+  background-color: #FFDD00;
+}
+
+/*STATUES BACKGROUND*/
+.statues {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: -999;
+  overflow: hidden;
+}
+
+.statues #christ {
+  position: absolute;
+  height: 120%;
+  bottom: -15.9rem;
+  right: -20rem;
+  opacity: 0.04;
+}
+
+.statues #mother {
+  position: absolute;
+  height: 155%;
+  bottom: -10.5rem;
+  left: -30rem;
+  opacity: 0.04;
+}
+
+/*MEDIA CONTROL*/
+.media-control {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.music-title {
+  font-size: 1rem;
+  line-height: 1.5 !important;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+button.control {
+  border: none;
+  margin: 0 .8rem;
+  background: none;
+  font-size: 2rem;
+  line-height: 5;
+}
+
+.controls p, .controls p i {
+  line-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+button.control i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-wrap: nowrap;
+}
+
+.media-control .controls {
+  display: flex;
+  flex-basis: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cover {
+  width: 150px; 
+  height: auto; 
+  max-width: 150px;;
+  min-height: 150px;
+  aspect-ratio: 1 / 1;
+  transition: opacity 0.5s ease-in-out;
+  flex-basis: 100%;
+}
+
+.cover video {
+  width: 100%;
+  height: 100%;
+}
+
+/*SCROLLBAR*/
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0);
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.15);
+  border-radius: 6px;
+}
+
+#info {
+  cursor: pointer;
+}
+
+/*INITIAL SCREEN BUTTON*/
+.initial-screen {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.button2 {
+  display: block;
+  background-color: #000000d2;
+  border-radius: 0.65rem;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 0.6rem !important;
+}
+
+span.button-top {
+  display: block;
+  border: 2px solid #000000d2;
+  background-color: #40A578;
+  border-radius: 0.65rem;
+  padding: 0.8rem 2.0rem;
+  transform: translateY(-0.6rem);
+  transition: transform 0.1s ease-in-out;
+
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+span.button-top svg {
+  width: 1.5rem;
+}
+
+button.button2:hover .button-top {
+  transform: translateY(-0.5rem);
+}
+
+button.button2:active .button-top {
+  transform: translateY(-0.2rem);
+}
+
+/*OTHERS*/
+.letter, .media-control {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.interactive-word {
+  border-bottom: 3.2px solid #0057B7;
+  cursor: pointer;
+}
+
+/*RESPONSIVITY*/
+@media (max-width: 600px) {
+  .media-control {
+    border: 0;
+    outline: 0;
+    bottom: 0;
+    gap: .2rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container-child {
+    width: 85%;
+  }
+
+  .letter {
+    margin-bottom: 0;
+  }
+
+  .letter .content p {
+    font-size: 1.5rem !important;
+  }
+
+  .media-control .music-title 
+
+  .media-control .controls {
+    flex-direction: row;
+  }
+
+  .media-control i {
+    font-size: 1.5rem;
+  }
+
+  .media-control .buttons {
+    gap: 3rem;
+    flex-basis: 5%;
+  }
+
+  .container {
+    padding-bottom: 0 !important;
+  }
+
+  .statues #mother {
+    height: 115%;
+    left: -100%;
+  }
+
+  .statues #christ {
+    height: 72%;
+    right: -13rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .media-control {
+    width: 60%;
+  }
+}
