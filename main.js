@@ -285,12 +285,19 @@ Object.values(audios).forEach(audio => {
 	audio.music.addEventListener('timeupdate', () => {
 		if(audio.music.currentTime === audio.music.duration) {
 			isPlaying = false;
-			audio.music.currentTime = 0;
+
+			if(audio.music || currentlyPlaying.isInteractive) {
+				audio.music.currentTime = 0;
+				pause();
+			}
+			
 			playButonn.className = 'fi fi-br-play';
 			
 			currentlyPlaying = previouslyPlaying;
 
-			play(previouslyPlaying, pausedSong);
+			if(!previouslyPlaying.isInteractive) {
+				play(previouslyPlaying, pausedSong);
+			}
 		}
 	})
 });
